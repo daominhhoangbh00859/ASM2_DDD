@@ -1,0 +1,29 @@
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\bin\Debug\ASM 2 DDD.exe.config
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\bin\Debug\ASM 2 DDD.exe
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\bin\Debug\ASM 2 DDD.pdb
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM 2 DDD.csproj.AssemblyReference.cache
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM_2_DDD.Form1.resources
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM_2_DDD.Properties.Resources.resources
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM 2 DDD.csproj.GenerateResource.cache
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM 2 DDD.csproj.CoreCompileInputs.cache
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM 2 DDD.exe
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM 2 DDD.pdb
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM_2_DDD.Form2.resources
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM_2_DDD.Form3.resources
+D:\CNTT\bài 01\ASM 2 DDD\ASM 2 DDD\obj\Debug\ASM_2_DDD.frmQuanLySach.resources
+D:\CNTT\bài 01\ASM 2 DDD (1)\bin\Debug\ASM 2 DDD.exe.config
+D:\CNTT\bài 01\ASM 2 DDD (1)\bin\Debug\ASM 2 DDD.exe
+D:\CNTT\bài 01\ASM 2 DDD (1)\bin\Debug\ASM 2 DDD.pdb
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM 2 DDD.csproj.AssemblyReference.cache
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM_2_DDD.Form1.resources
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM_2_DDD.Form2.resources
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM_2_DDD.Form3.resources
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM_2_DDD.frmQuanLySach.resources
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM_2_DDD.frmThongTinSach.resources
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM_2_DDD.Properties.Resources.resources
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM 2 DDD.csproj.GenerateResource.cache
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM 2 DDD.csproj.CoreCompileInputs.cache
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM 2 DDD.exe
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM 2 DDD.pdb
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM_2_DDD.MDIParent1.resources
+D:\CNTT\bài 01\ASM 2 DDD (1)\obj\Debug\ASM_2_DDD.themsuanguoidung.resources

@@ -137,18 +137,18 @@ namespace ASM_2_DDD
 
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Thông tin nguoi dung đã được cập nhật thành công.");
+                        MessageBox.Show("Thông tin người dùng đã được cập nhật thành công.");
                         form3.LoadUser();
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy nguoi dung ID tương ứng.");
+                        MessageBox.Show("Không tìm thấy người dùng ID tương ứng.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi cập nhật thông tin nguoi dung: " + ex.Message);
+                MessageBox.Show("Lỗi khi cập nhật thông tin người dùng: " + ex.Message);
             }
         }
 

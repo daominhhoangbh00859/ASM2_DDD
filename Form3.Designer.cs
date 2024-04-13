@@ -130,6 +130,7 @@
             this.dgv_QuanLyUser.RowTemplate.Height = 24;
             this.dgv_QuanLyUser.Size = new System.Drawing.Size(799, 205);
             this.dgv_QuanLyUser.TabIndex = 10;
+            this.dgv_QuanLyUser.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QuanLyUser_CellContentClick);
             this.dgv_QuanLyUser.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QuanLyUser_RowEnter);
             // 
             // closeBt
@@ -140,6 +141,7 @@
             this.closeBt.TabIndex = 12;
             this.closeBt.Text = "Close";
             this.closeBt.UseVisualStyleBackColor = true;
+            this.closeBt.Click += new System.EventHandler(this.closeBt_Click);
             // 
             // addBt
             // 

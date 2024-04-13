@@ -24,27 +24,37 @@ namespace ASM_2_DDD
 
         }
 
-        
+
 
 
         private void BTconfirm_Click_1(object sender, EventArgs e)
         {
-            string usrename = TBname.Text;
-            string passwork = TBpasswork.Text;
-           
-            if (CheckUsernamePassword(usrename, passwork))
+            string username = TBname.Text;
+            string password = TBpasswork.Text;
+
+            if (CheckUsernamePassword(username, password))
             {
-                MessageBox.Show("Đăng nhập thành công");              
-                MDIParent1 mdi = new MDIParent1(checkAdmin);
-                mdi.Show();
-                //this.Close();
+                if (checkAdmin)
+                {
+                    MessageBox.Show("Đăng nhập thành công");
+                    MDIParent1 mdi = new MDIParent1(checkAdmin);
+                    mdi.Show();
+                    //this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Đăng nhập thành công");
+                    // Hiển thị Form2 nếu không phải admin
+                    Form2 form2 = new Form2();
+                    form2.Show();
+                }
             }
             else
             {
                 MessageBox.Show("Đăng nhập không thành công!");
             }
-
         }
+
 
         private void pictureBox1_Click_1(object sender, EventArgs e)
         {
@@ -68,10 +78,12 @@ namespace ASM_2_DDD
                 {
                     
                     checkAdmin = true;
+
                 }
                 else 
                 {
-                    checkAdmin = false;
+                    checkAdmin = false ;
+                    
                 }
                 return true;
             }
@@ -79,6 +91,14 @@ namespace ASM_2_DDD
             
         }
 
-        
+        private void TBpasswork_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

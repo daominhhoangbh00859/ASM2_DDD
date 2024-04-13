@@ -114,7 +114,7 @@ namespace ASM_2_DDD
                     string PublicationDate = tb_PublicationDate.Text;
                     int CategoryID = int.Parse(tb_CategoryID.Text);
 
-                    // Câu lệnh SQL để cập nhật thông tin nhân viên
+                    // Câu lệnh SQL để cập nhật thông tin 
                     string query = "UPDATE Book SET  Name = @Name, AUthorID = @AUthorID, PublicationDate = @PublicationDate, CategoryID = @CategoryID WHERE Id = @Id";
 
                     SqlCommand command = new SqlCommand(query, connection);

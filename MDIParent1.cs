@@ -42,12 +42,18 @@ namespace ASM_2_DDD
                 Form2 form2 = new Form2();
                 form2.Show();
             }
+
         }
 
         private void toolStripLabel2_Click(object sender, EventArgs e)
         {
             Form3 form3 = new Form3();
             form3.Show();
+        }
+
+        private void MDIParent1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

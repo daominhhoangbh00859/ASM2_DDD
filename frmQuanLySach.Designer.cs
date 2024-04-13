@@ -49,7 +49,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(402, 21);
+            this.label3.Location = new System.Drawing.Point(586, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 20;
@@ -58,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(54, 94);
+            this.label2.Location = new System.Drawing.Point(340, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 16);
             this.label2.TabIndex = 19;
@@ -67,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 24);
+            this.label1.Location = new System.Drawing.Point(54, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(39, 16);
             this.label1.TabIndex = 18;
@@ -75,7 +75,7 @@
             // 
             // EditBt
             // 
-            this.EditBt.Location = new System.Drawing.Point(177, 166);
+            this.EditBt.Location = new System.Drawing.Point(189, 166);
             this.EditBt.Name = "EditBt";
             this.EditBt.Size = new System.Drawing.Size(80, 41);
             this.EditBt.TabIndex = 17;
@@ -85,7 +85,7 @@
             // 
             // authorTb
             // 
-            this.authorTb.Location = new System.Drawing.Point(167, 88);
+            this.authorTb.Location = new System.Drawing.Point(413, 18);
             this.authorTb.Name = "authorTb";
             this.authorTb.Size = new System.Drawing.Size(102, 22);
             this.authorTb.TabIndex = 16;
@@ -100,34 +100,36 @@
             // dgv_frmQuanLySach
             // 
             this.dgv_frmQuanLySach.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_frmQuanLySach.Location = new System.Drawing.Point(-29, 238);
+            this.dgv_frmQuanLySach.Location = new System.Drawing.Point(-4, 231);
             this.dgv_frmQuanLySach.Name = "dgv_frmQuanLySach";
             this.dgv_frmQuanLySach.RowHeadersWidth = 51;
             this.dgv_frmQuanLySach.RowTemplate.Height = 24;
-            this.dgv_frmQuanLySach.Size = new System.Drawing.Size(828, 231);
+            this.dgv_frmQuanLySach.Size = new System.Drawing.Size(803, 207);
             this.dgv_frmQuanLySach.TabIndex = 14;
+            this.dgv_frmQuanLySach.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_frmQuanLySach_CellContentClick);
             this.dgv_frmQuanLySach.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(589, 166);
+            this.button2.Location = new System.Drawing.Point(639, 166);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 41);
             this.button2.TabIndex = 25;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // categoryCb
             // 
             this.categoryCb.FormattingEnabled = true;
-            this.categoryCb.Location = new System.Drawing.Point(511, 16);
+            this.categoryCb.Location = new System.Drawing.Point(671, 16);
             this.categoryCb.Name = "categoryCb";
             this.categoryCb.Size = new System.Drawing.Size(106, 24);
             this.categoryCb.TabIndex = 21;
             // 
             // DeleteBt
             // 
-            this.DeleteBt.Location = new System.Drawing.Point(306, 166);
+            this.DeleteBt.Location = new System.Drawing.Point(343, 166);
             this.DeleteBt.Name = "DeleteBt";
             this.DeleteBt.Size = new System.Drawing.Size(80, 41);
             this.DeleteBt.TabIndex = 26;
@@ -137,7 +139,7 @@
             // 
             // SearchBt
             // 
-            this.SearchBt.Location = new System.Drawing.Point(696, 16);
+            this.SearchBt.Location = new System.Drawing.Point(498, 166);
             this.SearchBt.Name = "SearchBt";
             this.SearchBt.Size = new System.Drawing.Size(80, 41);
             this.SearchBt.TabIndex = 27;
@@ -158,9 +160,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ASM_2_DDD.Properties.Resources._206ab01e_3009_4634_917a_840214149fc5;
-            this.pictureBox1.Location = new System.Drawing.Point(-29, -11);
+            this.pictureBox1.Location = new System.Drawing.Point(-4, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(826, 243);
+            this.pictureBox1.Size = new System.Drawing.Size(803, 232);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;

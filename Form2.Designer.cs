@@ -55,14 +55,14 @@
             // 
             // booktitleTb
             // 
-            this.booktitleTb.Location = new System.Drawing.Point(199, 30);
+            this.booktitleTb.Location = new System.Drawing.Point(160, 30);
             this.booktitleTb.Name = "booktitleTb";
             this.booktitleTb.Size = new System.Drawing.Size(137, 22);
             this.booktitleTb.TabIndex = 1;
             // 
             // authorTb
             // 
-            this.authorTb.Location = new System.Drawing.Point(199, 100);
+            this.authorTb.Location = new System.Drawing.Point(427, 30);
             this.authorTb.Name = "authorTb";
             this.authorTb.Size = new System.Drawing.Size(137, 22);
             this.authorTb.TabIndex = 2;
@@ -90,7 +90,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(86, 106);
+            this.label2.Location = new System.Drawing.Point(363, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 16);
             this.label2.TabIndex = 6;
@@ -99,7 +99,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(513, 33);
+            this.label3.Location = new System.Drawing.Point(630, 33);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 16);
             this.label3.TabIndex = 7;
@@ -108,19 +108,20 @@
             // cateIdComboB
             // 
             this.cateIdComboB.FormattingEnabled = true;
-            this.cateIdComboB.Location = new System.Drawing.Point(599, 28);
+            this.cateIdComboB.Location = new System.Drawing.Point(710, 28);
             this.cateIdComboB.Name = "cateIdComboB";
             this.cateIdComboB.Size = new System.Drawing.Size(141, 24);
             this.cateIdComboB.TabIndex = 9;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(652, 178);
+            this.button2.Location = new System.Drawing.Point(622, 178);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(88, 23);
             this.button2.TabIndex = 13;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 

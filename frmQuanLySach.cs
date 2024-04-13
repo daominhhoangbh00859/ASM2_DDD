@@ -48,38 +48,40 @@ namespace ASM_2_DDD
 
         private void SearchBt_Click(object sender, EventArgs e)
         {
-            string booktile = bookTitleTb.Text;
+            string bookTitle = bookTitleTb.Text;
             string author = authorTb.Text;
             var selectedRow = this.categoryCb.SelectedItem as DataRowView;
             var cateID = selectedRow["id"];
 
             string strConnect = System.Configuration.ConfigurationSettings.AppSettings["MyCNN"].ToString();
             SqlConnection cnn = new SqlConnection(strConnect);
-            bool isNullBookTitle = string.IsNullOrEmpty(booktile);
+            bool isNullBookTitle = string.IsNullOrEmpty(bookTitle);
             bool isNullAuthor = string.IsNullOrEmpty(author);
 
             Console.WriteLine(this.categoryCb.SelectedItem.ToString());
             string command;
-            if (!string.IsNullOrEmpty(bookTitleTb.Text) && !string.IsNullOrEmpty(authorTb.Text) )
+            if (!string.IsNullOrEmpty(bookTitleTb.Text) && !string.IsNullOrEmpty(authorTb.Text))
             {
-                command = String.Format("SELECT * FROM Book, Author WHERE Book.name like '%{0}%' and Author.name like '%{1}%' and Book.categoryID = {2}", booktile, author, cateID);
+                command = String.Format("SELECT * FROM Book, Author " +                                       
+                                        "WHERE Book.name LIKE '%{0}%' AND Author.name LIKE '%{1}%' AND Book.categoryID = {2}", bookTitle, author, cateID);
             }
-            else if(!string.IsNullOrEmpty(bookTitleTb.Text))
+            else if (!string.IsNullOrEmpty(bookTitleTb.Text))
             {
-                command = String.Format("SELECT * FROM Book WHERE Book.name like '%{0}%'  and Book.categoryID = {1}", booktile,  cateID);
+                command = String.Format("SELECT * FROM Book " +
+                                        /*"LEFT JOIN Author ON Book.authorID = Author.authorID " +*/
+                                        "WHERE Book.name LIKE '%{0}%' AND Book.categoryID = {1}", bookTitle, cateID);
             }
-            else if(!string.IsNullOrEmpty(authorTb.Text))
+            else if (!string.IsNullOrEmpty(authorTb.Text))
             {
-                command = String.Format("SELECT * FROM Book, Author  WHERE Author.name like '%{0}%'  and Book.categoryID = {1}", author, cateID);
+                command = String.Format("SELECT * FROM Book, Author " +
+                                        "WHERE Author.name LIKE '%{0}%' AND Book.categoryID = {1}", author, cateID);
             }
             else
             {
-                command = String.Format("SELECT * FROM Book WHERE  categoryID = {0}", cateID);
+                command = String.Format("SELECT * " +
+                                        "FROM Book " +                                       
+                                        "WHERE Book.categoryID = {0}" , cateID);
             }
-            /*if (!isNullBookTitle)
-            {
-
-            }*/
 
             SqlCommand myCommand = new SqlCommand(command, cnn);
             SqlDataAdapter da = new SqlDataAdapter(myCommand);
@@ -87,6 +89,8 @@ namespace ASM_2_DDD
             da.Fill(dataTable);
             this.dgv_frmQuanLySach.DataSource = dataTable;
         }
+
+
 
         private void frmQuanLySach_Load(object sender, EventArgs e)
         {
@@ -122,7 +126,7 @@ namespace ASM_2_DDD
 
         private void DeleteBt_Click(object sender, EventArgs e)
         {
-            DialogResult dr = MessageBox.Show("Bạn có chắc muốn xóa sach này!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult dr = MessageBox.Show("Bạn có chắc muốn xóa sách này!", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (dr == DialogResult.Yes)
             {
                 XoaSach();
@@ -155,19 +159,28 @@ namespace ASM_2_DDD
 
                     if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Sach đã được xóa khỏi cơ sở dữ liệu.");
+                        MessageBox.Show("Sách đã được xóa khỏi cơ sở dữ liệu.");
                     }
                     else
                     {
-                        MessageBox.Show("Không tìm thấy sach có ID tương ứng.");
+                        MessageBox.Show("Không tìm thấy sách có ID tương ứng.");
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi xóa sach: " + ex.Message);
+                MessageBox.Show("Lỗi khi xóa sách: " + ex.Message);
             }
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dgv_frmQuanLySach_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

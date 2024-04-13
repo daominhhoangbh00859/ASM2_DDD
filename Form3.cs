@@ -162,6 +162,16 @@ namespace ASM_2_DDD
                 MessageBox.Show("Lỗi khi xóa nguoi dung: " + ex.Message);
             }
         }
+
+        private void closeBt_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dgv_QuanLyUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
     
 }

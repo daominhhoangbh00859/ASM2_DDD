@@ -68,11 +68,12 @@
             // 
             // TBpasswork
             // 
-            this.TBpasswork.Location = new System.Drawing.Point(144, 111);
+            this.TBpasswork.Location = new System.Drawing.Point(144, 117);
             this.TBpasswork.Name = "TBpasswork";
             this.TBpasswork.PasswordChar = '*';
             this.TBpasswork.Size = new System.Drawing.Size(165, 22);
             this.TBpasswork.TabIndex = 3;
+            this.TBpasswork.TextChanged += new System.EventHandler(this.TBpasswork_TextChanged);
             // 
             // BTconfirm
             // 
@@ -86,10 +87,11 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(58, 84);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 22);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(193, 22);
             this.dateTimePicker1.TabIndex = 6;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // pictureBox1
             // 
@@ -109,9 +111,9 @@
             this.Login.Controls.Add(this.TBname);
             this.Login.Controls.Add(this.label2);
             this.Login.Controls.Add(this.label1);
-            this.Login.Location = new System.Drawing.Point(186, 129);
+            this.Login.Location = new System.Drawing.Point(204, 137);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(415, 255);
+            this.Login.Size = new System.Drawing.Size(440, 265);
             this.Login.TabIndex = 7;
             this.Login.TabStop = false;
             this.Login.Text = "Login";
